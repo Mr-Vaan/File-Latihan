@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script>
+         $(function(){
+            $('img').mouseenter(function(){
+               $('p').text('Mouse masuk gambar');
+            }).mouseleave(function(){
+               $('p').text('Mouse keluar gambar');
+            }).mousedown(function(){
+               $('p').text('Mouse ditekan');
+            }).mouseup(function(){
+               $('p').text('Mouse dilepas');
+            });
+         });
+      </script>
+   </head>
+   <body>
+      <img src="images/1.jpg" width="200">
+      <p></p>
+   </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script>
+         $(function(){
+            $('input[name="nama"]').focus(function(){
+               $('p').text('Nama sedang fokus');
+            }).focusout(function(){
+               $('input[name="alamat"]').focus();
+               $('p').text('Nama sedang tidak focus');
+            });
+         });
+      </script>
+   </head>
+   <body>
+      <form>
+         <input type="text" name="nama">
+         <input type="text" name="alamat">
+      </form>
+      <p></p>
+   </body>
+</html>

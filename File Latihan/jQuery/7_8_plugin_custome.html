@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/pluginku.js"></script>
+  <script>
+    $(function(){
+      $('.normal').pluginku();
+      $('.biru').pluginku({
+        warna: 'yellow',
+        background: 'blue'
+      });      
+    });
+  </script>
+  </head>
+  </body>
+    <div class="normal">Box normal</div>
+    <div class="biru">Box biru</div>
+  </body>
+</html>
